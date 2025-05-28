@@ -1,25 +1,19 @@
 {
-	"name": "avaibooksports/doctrine-migrations-multiple-database-bundle",
+	"name": "jgauthi/doctrine-migrations-multiple-database-bundle",
 	"type": "symfony-bundle",
 	"description": "Symfony DoctrineMigrationsMultipleDatabaseBundle",
 	"keywords": ["DBAL", "Migrations", "Schema", "Multiple databases"],
 	"license": "MIT",
 	"authors": [
-		{
-			"name": "Pablo Largo",
-			"email": "devnix.code@gmail.com"
-		},
-		{
-			"name": "AvaiBook Sports",
-			"email": "desarrollo@avaibooksports.com",
-			"homepage": "https://www.avaibooksports.com"
-		}
+		{ "name": "Pablo Largo", "email": "devnix.code@gmail.com" },
+		{ "name": "AvaiBook Sports", "email": "desarrollo@avaibooksports.com", "homepage": "https://www.avaibooksports.com" },
+		{ "name": "jgauthi", "homepage": "https://github.com/jgauthi", "role": "Developer" }
 	],
 	"require": {
 		"doctrine/doctrine-bundle": "~1.0|~2.0",
 		"doctrine/migrations": "~3.0",
-		"php": ">=7.2",
-		"symfony/framework-bundle": "~3.4|~4.0|~5.0|~6.0",
+		"php": "^7.1 || ^8.0",
+		"symfony/framework-bundle": "~3.4|~4.0|~5.0|~6.0|~7.0|~8.0",
 		"doctrine/doctrine-migrations-bundle": "^3"
 	},
 	"require-dev": {

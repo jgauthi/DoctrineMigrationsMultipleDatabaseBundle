@@ -1,7 +1,23 @@
 # DoctrineMigrationsMultipleDatabaseBundle
+**note: this repot is available without garanties, no support provided.**
 
 This bundle extends the [DoctrineMigrationsBundle](https://github.com/doctrine/DoctrineMigrationsBundle) functionality
 in a hacky and dirty way to provide a easy way to configure migrations paths for multiple entity managers.
+
+## Install
+Edit composer.json:
+
+```json
+{
+  "repositories": [
+    { "type": "git", "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle" }
+  ],
+  "require": {
+    "jgauthi/doctrine-migrations-multiple-database-bundle": "1.*"
+  }
+}
+```
+
 
 ## Configuration
 
