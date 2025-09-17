@@ -25,7 +25,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"AvaiBookSports\\Bundle\\MigrationsMutlipleDatabase\\": "src/"
+			"Jgauthi\\Bundle\\MigrationsMutlipleDatabase\\": "src/"
 		}
 	}
 }

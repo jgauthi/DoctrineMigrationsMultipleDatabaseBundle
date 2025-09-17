@@ -10,10 +10,25 @@ Edit composer.json:
 ```json
 {
   "repositories": [
-    { "type": "git", "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle" }
+    {
+      "type": "package",
+      "package": {
+        "name": "jgauthi/doctrine-migrations-multiple-database-bundle",
+        "version": "dev-main",
+        "source": {
+          "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle",
+          "type": "git",
+          "reference": "main"
+        },
+        "dist": {
+          "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle/archive/refs/heads/main.zip",
+          "type": "zip"
+        }
+      }
+    }
   ],
   "require": {
-    "jgauthi/doctrine-migrations-multiple-database-bundle": "1.*"
+    "jgauthi/doctrine-migrations-multiple-database-bundle": "dev-main"
   }
 }
 ```
@@ -24,7 +39,7 @@ Edit composer.json:
 - Install the package by running `composer require avaibooksports/doctrine-migrations-multiple-database-bundle`
 - Go to your `config/bundles.php` file and register the bundle:
 ```php
-AvaiBookSports\Bundle\MigrationsMutlipleDatabase\DoctrineMigrationsMultipleDatabaseBundle::class => ['all' => true],
+Jgauthi\Bundle\MigrationsMutlipleDatabase\DoctrineMigrationsMultipleDatabaseBundle::class => ['all' => true],
 ```
 - Finally, create a file in `config/packages/` called `doctrine_migrations_multiple_database.yaml` and follow the next example:
 ```yaml
