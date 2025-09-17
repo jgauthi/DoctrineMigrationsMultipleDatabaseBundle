@@ -15,14 +15,14 @@ Edit composer.json:
       "package": {
         "name": "jgauthi/doctrine-migrations-multiple-database-bundle",
         "version": "dev-main",
-        "source": {
-          "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle",
-          "type": "git",
-          "reference": "main"
-        },
         "dist": {
           "url": "https://github.com/jgauthi/DoctrineMigrationsMultipleDatabaseBundle/archive/refs/heads/main.zip",
           "type": "zip"
+        },
+        "autoload": {
+          "psr-4": {
+            "Jgauthi\\Bundle\\MigrationsMutlipleDatabase\\": "src/"
+          }
         }
       }
     }
